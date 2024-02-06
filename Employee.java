@@ -1,51 +1,26 @@
-package com.tns.day3;
+package com.tnsif.daysix.staticvar;
 
 public class Employee {
-	
-	//Data members
+	// Declare instance variables.
 	private String name;
-	private String dept;
-	private int salary;
 	private int id;
-	private int age;
 	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
+	// Declare a static variable companyName with data type String and assign value
+	// TNS which is common for all the objects.
+	static String companyName = "TNS";
+	static float salary = 9999.99f;
+
+	// Declare a two-parameter constructor with parameters named n and i.
+	Employee(String name, int id) {
 		this.name = name;
-	}
-	public String getDept() {
-		return dept;
-	}
-	public void setDept(String dept) {
-		this.dept = dept;
-	}
-	public int getSalary() {
-		return salary;
-	}
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
 		this.id = id;
 	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
+
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", dept=" + dept + ", salary=" + salary + ", id=" + id + ", age=" + age + "]";
+		return "Employee [name=" + name + ", id=" + id + ", Company= "+companyName+"]";
 	}
-	
-	
-	
+
 	
 
 }

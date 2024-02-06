@@ -1,15 +1,19 @@
-package com.tns.day3;
+package com.tnsif.daysix.staticvar;
+
 
 public class EmployeeDemo {
 
 	public static void main(String[] args) {
-		Employee emp = new Employee();
-		emp.setName("rahul");
-		emp.setDept("ece");
-		emp.setSalary(100);
-		emp.setId(101);
-		emp.setAge(50);
-		System.out.println(emp);
+		// Create the first object of the class and pass the two arguments with type
+		// string and int.
+		System.out.println(Employee.companyName);
+		System.out.println(Employee.salary);
+	
+		Employee e = new Employee("Shubh", 123);
+		System.out.println(e);
+		
+		// Similarly, create the second object of the class and pass the two arguments.
+		e = new Employee("Deep", 321);
+		System.out.println(e);
 	}
-
 }

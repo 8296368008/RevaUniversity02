@@ -1,18 +1,12 @@
-package com.tnsif.dayfive;
+package com.tnsif.daytweleve;
 
-public class Student extends Citizen {
-	
+public class Student {
 	private int rollNo;
-	private String collegeName;
-	
-	public Student() {
-		super();
-	}
+	private String name;
 
-	public Student(String name,String aadharNo,String address,long phno,int rollNo, String collegeName) {
-		super(name,aadharNo,address,phno);
+	Student(int rollNo, String name) {
 		this.rollNo = rollNo;
-		this.collegeName = collegeName;
+		this.name = name;
 	}
 
 	public int getRollNo() {
@@ -23,25 +17,11 @@ public class Student extends Citizen {
 		this.rollNo = rollNo;
 	}
 
-	public String getCollegeName() {
-		return collegeName;
+	public String getName() {
+		return name;
 	}
 
-	public void setCollegeName(String collegeName) {
-		this.collegeName = collegeName;
+	public void setName(String name) {
+		this.name = name;
 	}
-
-	@Override
-	public String toString() {
-		return "Student [rollNo=" + rollNo + ", collegeName=" + collegeName + ", getName()=" + getName()
-				+ ", getAadharNo()=" + getAadharNo() + ", getAddress()=" + getAddress() + ", getPhno()=" + getPhno()
-				+ "]";
-	}
-	
-	
-	
-	
-	
-	
-
 }
